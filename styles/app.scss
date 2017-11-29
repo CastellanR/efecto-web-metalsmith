@@ -1,0 +1,68 @@
+@import './colors.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro');
+
+@import './header.scss';
+@import './advertising.scss';
+@import './prices.scss';
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+hr.simple {
+  border-top: thin solid #a2a3a5;
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+  width: 15%;
+}
+hr.separator {
+  padding: 0;
+  border: none;
+  border-top: thin solid #FFF;
+  color: $light-blue;
+  text-align: center;
+  vertical-align: middle;
+  width: 40%;
+  overflow: visible;
+}
+hr.separator:after {
+  content: "\f111";
+  font-family: FontAwesome;
+  display: inline;
+  position: relative;
+  top: -0.7em;
+  font-size: 1em;
+  padding: 0 0.25em;
+}
+hr.separator-black {
+  padding: 0;
+  border: none;
+  border-top: thin solid #000;
+  color: $light-blue;
+  text-align: center;
+  vertical-align: middle;
+  width: 10%;
+  overflow: visible;
+}
+hr.separator-black:after {
+  content: "\f111";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.6em;
+  font-size: 1em;
+  padding: 0 0.25em;
+}
+.rectangle {
+background-color: $light-blue;
+width: 0.3rem;
+height: 2rem;
+margin-right: 1rem;
+}
+h3 {
+color: $dark-gray;
+font-size: 2rem;
+font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,160 @@
+@import './colors';
+@import './responsive';
+
+prices {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2rem;
+    margin-top: -8rem;
+    @include mobile {
+      margin-top: 1rem;
+    }
+    .title {
+      text-align: center;
+      h3 {
+        margin-bottom: 0rem;
+        color: $black;
+        @include mobile {
+          font-size: 1.8rem;
+        }
+      }
+      p  {
+        @include mobile {
+          font-size: 0.8rem;
+        }
+      }
+      hr {
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        @include mobile {
+          margin-top: 1rem;
+          display: none;
+        }
+      }
+    }
+    .content {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      @include mobile {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+      }
+      .item, .blue {
+        margin: 0px 5px;
+        text-align: center;
+        width: 23%;
+        align-content: center;
+        @include mobile {
+          margin: 0 3px;
+          width: 75%;
+          margin-bottom: 1rem;
+        }
+        .top {
+          color: #ffffff;
+          padding-top: 2rem;
+          padding-bottom: 2rem;              
+          font-size: 1.5rem;
+          height: 32%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          h4  {
+            margin-top: 0.5rem;
+          }
+          @include mobile {
+            height: 8.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0px;
+            font-size: 1rem;
+          }
+          .circle {
+            position: relative;
+            width: 8rem;
+            height: 20rem;
+            background-color: $light-gray;
+            border-radius: 50%;
+            border: 7px solid rgba(0,0,0, .1);
+            top: -1.5rem;
+            @include mobile {
+              position: relative;
+              width: 5rem;
+              height: 15rem;
+              border: 4px solid rgba(0,0,0, .1);
+              top: 2.2rem;
+            }                   
+            i {
+              position: relative;
+              font-size: 2rem;
+              color: $dark-gray;
+              font-weight: bolder;
+              font-style: normal;  
+              top: 30%;
+              @include mobile {
+                  font-size: 1.5rem;
+              }
+            }                               
+          }
+        }
+        .bottom {
+          background-color: $light-gray;
+          margin-top: -8rem;
+          padding-top: 5rem;
+          padding-bottom: 6px;
+          color: #707172;
+          font-size: 0.9rem;
+          @include mobile {
+            margin-top: -0.5rem;
+            padding-top: 3rem;
+            padding-bottom: 3px;
+          }
+          .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            @include mobile {
+              padding: 8px 16px;
+              margin-top: 1rem;
+              margin-block-end: 1.5rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .item {         
+    .top {
+      background-color: $dark-gray;
+    }
+    .bottom {            
+      .button {
+        background-color: $dark-gray;
+      }
+    }
+  }
+  .blue {
+    .top {
+      background-color: $light-blue;
+    }                          
+    .bottom{              
+      .button {
+          background-color: $light-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import './colors';
+@import './responsive';
+
+advertising {
+  .container {
+    position: relative;
+    clear: both;
+    margin-top: 10rem;
+    margin-bottom: -5rem;
+    width: 100%;
+    height: 45rem;
+    @include mobile {
+      margin-top: 7rem;
+    }
+    .image {
+      position: absolute;
+      @include mobile {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .content {
+      float: right;        
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      align-content: center;
+      font-family: 'Open Sans', sans-serif;
+      text-align: right;
+      left: 50%;
+      margin-left: -26rem;
+      margin-top: -2rem;
+      @include mobile {
+          padding-left: 10.2rem;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        .text {
+          margin-bottom: 1rem;
+          width: 100%;
+          h3  {
+            margin-top: 1.6rem;
+            color: $black;
+            @include mobile {
+              font-size: 1.8rem;
+            }
+          }
+        } 
+        .rectangle {
+          margin-left: 1rem;
+          margin-right: 0rem;
+        }
+      }     
+                  
+      .text {
+        margin-top: -2rem;
+        font-size: 0.8rem;
+        width: 80%;
+        padding-left: 5.25rem;
+        float: right;
+        p {
+          margin: 0rem;   
+        }       
+        @include mobile {
+          padding-left: 5.2rem;
+        }
+      }
+      .circle {
+        display: flex;
+        flex-direction: column;
+        border-radius: 50%;
+        background-color: $light-blue;
+        width: 120px;
+        height: 120px;
+        text-align: justify;
+        text-align-last: center;
+        font-size: 1rem;
+        margin-left: 5rem;
+        margin-top: 1rem;
+        align-items: center;
+        @include mobile {
+          margin-top: 0.8rem;
+          margin-left: 8rem;
+        }
+        i {
+          margin-top: 2rem;
+          color: #ffffff;
+          font-weight: bolder;
+          font-style: normal;
+          font-size: 1.4rem;
+        }
+        p {
+          color: #ffffff;
+          font-size: 1rem;
+          margin-top: 0rem;
+        }
+      }
+    }
+  }
+}
