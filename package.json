@@ -56,6 +56,8 @@
     "webpack": "^2.4.1"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
     "normalize-scss": "^6.0.0"
   }
 }

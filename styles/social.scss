@@ -1,42 +1,42 @@
-@import './colors';
-@import './responsive';
+@import './colors.scss';
+@import './responsive.scss';
 
-advertising {
+social{
   .container {
     position: relative;
     clear: both;
-    margin-top: 10rem;
-    margin-bottom: -5rem;
     width: 100%;
-    height: 45rem;
+    height: 30rem;
+    margin-top: 5rem;
     @include mobile {
-      margin-top: 7rem;
+      height: 15rem;
+      margin-top: 3rem;
     }
     .image {
       position: absolute;
+      width: 100%;
+      height: auto;
       @include mobile {
         display: none;
       }
       img {
+        margin-top: 0.5rem;
+        height: 100%;
         width: 100%;
-        height: auto;
       }
     }
     .content {
-      float: right;
       position: absolute;
+      padding-left: 50%;
+      float: right;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: flex-start;
-      align-content: center;
+      justify-content: center;
+      align-content: flex-start;
       font-family: 'Open Sans', sans-serif;
-      text-align: right;
-      left: 50%;
-      margin-left: -26rem;
-      margin-top: -2rem;
       @include mobile {
-          padding-left: 10.2rem;
+        padding-left: 20px;
       }
       .header {
         display: flex;
@@ -44,32 +44,17 @@ advertising {
         .text {
           margin-bottom: 1rem;
           width: 100%;
-          h3  {
+          h3 {
             margin-top: 1.6rem;
             color: $black;
-            @include mobile {
-              font-size: 1.8rem;
-            }
           }
         }
-        .rectangle {
-          margin-left: 1rem;
-          margin-right: 0rem;
-        }
       }
-
       .text {
         margin-top: -2rem;
+        text-align: left;
         font-size: 0.8rem;
-        width: 80%;
-        padding-left: 5.25rem;
-        float: right;
-        p {
-          margin: 0rem;
-        }
-        @include mobile {
-          padding-left: 5.2rem;
-        }
+        width: 70%;
       }
       .circle {
         display: flex;
@@ -81,12 +66,12 @@ advertising {
         text-align: justify;
         text-align-last: center;
         font-size: 1rem;
-        margin-left: 5rem;
+        margin-left: 10rem;
         margin-top: 1rem;
         align-items: center;
         @include mobile {
-          margin-top: 0.8rem;
-          margin-left: 8rem;
+          margin-top: 0.5rem;
+          margin-left: 11rem;
         }
         i {
           margin-top: 2rem;
@@ -96,9 +81,9 @@ advertising {
           font-size: 1.4rem;
         }
         p {
-          color: #ffffff;
-          font-size: 1rem;
-          margin-top: 0rem;
+            color: #ffffff;
+            font-size: 1rem;
+            margin-top: 0rem;
         }
       }
     }

@@ -1,0 +1,200 @@
+@import './colors.scss';
+@import './responsive.scss';
+
+footer {
+  @import '..//node_modules/bootstrap/scss/bootstrap.scss';
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -13rem;
+    width: 100%;
+    padding: 0px 0px;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    @include mobile {
+        margin-top: -25rem;
+    }
+    .circle {
+      position: absolute;
+      z-index: 2;
+      align-self: flex-start;
+      width: 70px;
+      height: 70px;
+      background-color: $light-gray;
+      border-radius: 50%;
+      border: 7px solid rgba(0,0,0, .1);
+      margin-top: -2rem;
+      left: 50%;
+      margin-left: -35px;
+      @include mobile {
+          margin-top: -1rem;
+          width: 40px;
+          height: 40px;
+          margin-left: -20px;
+          border: 4px solid rgba(0,0,0, .1);
+      }
+      i {
+        font-size: 3.5rem;
+        color: $light-blue;
+        text-align: center;
+        margin-left: 2px;
+        margin-top: 4px;
+        @include mobile {
+            font-size: 1.8rem;
+            margin-top: 3px;
+            margin-left: 3px;
+        }
+      }
+    }
+    .shape {
+      z-index: 1;
+      width: 100%;
+      padding: 50px 0;
+      clip-path: polygon(50% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+      background: url('/images/contacto.png') no-repeat center #fff;
+      background-attachment: fixed;
+      background-size: cover;
+      text-align: center;
+      @include mobile {
+          padding: 0rem;
+          height: 72rem;
+          clip-path: polygon(50% 0%, 100% 3%, 100% 100%, 0 100%, 0 3%);
+      }
+      img {
+          height: 50%;
+          width: 50%;
+      }
+      .header {
+        margin-top: 8rem;
+        @include mobile {
+            margin-top: 4rem;
+        }
+        h3 {
+          font-size: 2rem;
+          color: white;
+          font-weight: bolder;
+          @include mobile {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+          }
+        }
+        p {
+          color: white;
+          @include mobile {
+              font-size: 0.8rem;
+          }
+        }
+        hr {
+          width: 10%;
+          margin-top: 1.5rem;
+          border-top: thin solid #FFF;
+          @include mobile {
+              margin-top: 0.8rem;
+              width: 30%;
+          }
+        }
+      }
+      .content {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        @include mobile {
+          margin-top: 2rem;
+          flex-direction: column;
+        }
+        .info {
+          background-color: white;
+          margin-right: 2rem;
+          text-align: left;
+          padding: 45px 35px;
+          display: flex;
+          justify-content: center;
+          @include mobile {
+            margin-right: 0rem;
+            margin-bottom: 1.5rem;
+            width: 80%;
+          }
+          h4 {
+            color: $light-blue;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            @include mobile {
+              font-size: 1rem;
+              margin: 1rem 0rem;
+            }
+          }
+          p {
+            color: $dark-gray;
+            margin: 0px;
+          }
+          .text {
+            margin-bottom: 1rem;
+          }
+        }
+        form {
+          display: flex;
+          background-color: white;
+          width: 45%;
+          padding: 35px;
+          align-content: center;
+          @include mobile {
+            width: 80%;
+            padding-bottom: 0rem;
+          }
+          .form-group {
+            input {
+              margin-top: 1rem;
+            }
+            select {
+              margin-top: 1rem;
+              height: 2.5rem;
+              border: 0;
+              border-radius: 0px;
+              border-bottom: 1px solid $dark-gray;
+              font-family: 'Open Sans', sans-serif;
+              &:invalid {
+                color: $dark-gray;
+              }
+            }
+            textarea {
+              margin-top: 1rem;
+            }
+            .final {
+              float: left;
+              flex-direction: column;
+              display: flex;
+              label {
+                font-size: 0.9rem;
+                color: $dark-gray;
+                margin-bottom: 0.5rem;
+              }
+              .alert {
+                button {
+                  width: 9rem;
+                  margin-top: 0.5rem;
+                  background-color: $light-blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  .alert {
+    margin-top: 1rem;
+  }
+}

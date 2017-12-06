@@ -1,6 +1,58 @@
 {{#extend "default"}}
 
   {{#content "main"}}
+
+    <services>
+      <div class="container">
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-line-chart" aria-hidden="true"></i>
+          </div>
+          <h3>ESTRATEGIA S.E.0.</h3>
+          <hr class="simple">
+          <p>Aumenta el 50% de tus ventas. Creamos estrategias de embudo de conversión.</p>
+        </div>
+        <div class="blue">
+          <div class="icon">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+          </div>
+          <h3>DISEÑO MODERNO</h3>
+          <hr class="simple">
+          <p>El diseño genera el 60% de la intención de compra. Y lo hacemos posible.</p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          </div>
+          <h3>PÁGINAS RESPONSIVE</h3>
+          <hr class="simple">
+          <p>El 70% de visitas son a través del celular. Adaptamos tu web para todos los dispositivos.</p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          <h3>CÓDIGO LIMPIO</h3>
+          <hr class="simple">
+          <p>Un código limpio te provee una página rápida lo que aumenta en un 60% la posibilidad de conversión</p>
+        </div>
+      </div>
+    </services>
+
+    <web>
+      <div class="container">
+        <div class="image">
+          <img src='/images/sillon.png' alt="">
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="rectangle"></div>
+            <div class="text"><h3>TU WEB TRABAJA POR VOS</h3></div>
+          </div>
+        </div>
+      </div>
+    </web>
+
     <prices>
       <div class="container">
         <div class="title">
@@ -15,56 +67,94 @@
               <div class="circle">
                 <i>$4500</i>
               </div>
-            </div>     
+            </div>
             <div class="bottom">
               <p>En 10 días</p>
               <p>Selección de plantilla</p>
               <p>Selección de servidor</p>
               <p>Optimización de contenido</p>
-              <button class="button" (click)="moveTo('Plantilla')" scrollTo="contacto">
-                ELEGIR PLAN
-              </button>
+              <a class="button" href="#contact">ELEGIR PLAN</a>
             </div>
           </div>
-      
+
           <div class="blue">
             <div class="top">
               <h4>PERSONALIZADA</h4>
               <div class="circle">
                 <i>$7200</i>
               </div>
-            </div>     
+            </div>
             <div class="bottom">
               <p>En 20 días</p>
               <p>Estrategia S.E.O.</p>
               <p>Diseño personalizado</p>
               <p>Desarrollo de estrategia</p>
-              <button class="button" (click)="moveTo('Personalizada')" scrollTo="contacto">
-                ELEGIR PLAN
-              </button>
+              <a class="button" href="#contact">ELEGIR PLAN</a>
             </div>
           </div>
-      
+
           <div class="item">
             <div class="top">
               <h4>E-COMMERCE</h4>
               <div class="circle">
                 <i>$11300</i>
               </div>
-            </div>     
+            </div>
             <div class="bottom">
               <p>En 40 días</p>
               <p>Estrategia S.E.O.</p>
               <p>Diseño y Sistema personalizado</p>
               <p>Desarrollo de estrategia</p>
-              <button class="button" (click)="moveTo('E-Commerce')" scrollTo="contacto">
-                ELEGIR PLAN
-              </button>
+              <a class="button" href="#contact">ELEGIR PLAN</a>
             </div>
           </div>
         </div>
-      </div>   
+      </div>
     </prices>
+
+    <social>
+      <div class="container">
+        <div class="image">
+          <img src="/images/notebook.png" alt="">
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="rectangle"></div>
+            <div class="text"><h3>SOCIAL MEDIA</h3></div>
+          </div>
+          <div class="text">
+            <p>Estrategias de Community manager y redes sociales en Mendoza.</p>
+          </div>
+          <div class="circle">
+            <i>$4500</i>
+            <p>mensual</p>
+          </div>
+        </div>
+      </div>
+    </social>
+
+    <advertising>
+      <div class="container">
+        <div class="image">
+          <img src="/images/celular.png" alt="">
+        </div>
+        <div class="content">
+          <div class="header">
+            <div class="text"><h3>PUBLICIDAD ON-LINE</h3></div>
+            <div class="rectangle"></div>
+          </div>
+          <div class="text">
+            <p>EL mundo del marketing digital está en tus manos.</p>
+            <p>Hace presencia en la web.</p>
+          </div>
+          <div class="circle">
+            <i>$4500</i>
+            <p>mensual</p>
+          </div>
+        </div>
+      </div>
+    </advertising>
   {{/content}}
+
 
 {{/extend}}

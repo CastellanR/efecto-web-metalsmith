@@ -58,7 +58,7 @@ prices {
         .top {
           color: #ffffff;
           padding-top: 2rem;
-          padding-bottom: 2rem;              
+          padding-bottom: 2rem;
           font-size: 1.5rem;
           height: 32%;
           display: flex;
@@ -88,18 +88,18 @@ prices {
               height: 15rem;
               border: 4px solid rgba(0,0,0, .1);
               top: 2.2rem;
-            }                   
+            }
             i {
               position: relative;
               font-size: 2rem;
               color: $dark-gray;
               font-weight: bolder;
-              font-style: normal;  
+              font-style: normal;
               top: 30%;
               @include mobile {
                   font-size: 1.5rem;
               }
-            }                               
+            }
           }
         }
         .bottom {
@@ -137,11 +137,11 @@ prices {
     }
   }
 
-  .item {         
+  .item {
     .top {
       background-color: $dark-gray;
     }
-    .bottom {            
+    .bottom {
       .button {
         background-color: $dark-gray;
       }
@@ -150,8 +150,8 @@ prices {
   .blue {
     .top {
       background-color: $light-blue;
-    }                          
-    .bottom{              
+    }
+    .bottom{
       .button {
           background-color: $light-blue;
       }

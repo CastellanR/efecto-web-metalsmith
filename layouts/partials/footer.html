@@ -1,3 +1,70 @@
 <footer>
-  Footer
+  <div class="wrapper" id="contact">
+    <div class="circle">
+      <i class="fa fa-arrow-down"></i>
+    </div>
+    <div class="shape">
+      <div class="header">
+        <h3>CONTÁCTANOS</h3>
+        <p>Envianos tus datos y preferencias y nos pondremos en contacto para que accedas a tu sitio web</p>
+        <hr class="separator">
+      </div>
+      <div class="content">
+        <div class="info card">
+          <div class="text">
+            <h4>LLAMANOS</h4>
+            <p>2613072398</p>
+          </div>
+          <div class="text">
+            <h4>ENVÍANOS UN EMAIL</h4>
+            <p>efectowebmendoza@gmail.com</p>
+          </div>
+          <div class="text">
+            <h4>REDES SOCIALES</h4>
+            <a href="https://www.facebook.com/Efecto-WEB-Dise%C3%B1o-web-Mendoza-277572266075955/" class="fa fa-facebook"></a>
+          </div>
+        </div>
+        <form class="card" id="contacto">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control" placeholder="*Nombre" id="name" required>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control" id="phone" placeholder="*Teléfono" required>
+              </div>
+            </div>
+            <input type="text" class="form-control" id="email" placeholder="Email" >
+            <div class="form-row">
+              <div class="col-12 col-md-6">
+                <select class="form-control" id="plan" name="plan">
+                  <option value="" hidden>Elegí tu plan</option>
+                  <option>Plantilla</option>
+                  <option>Personalizada</option>
+                  <option>E-Commerce</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-control" id="extras">
+                  <option value="" hidden>Elegí tu servicio</option>
+                  <option>Ninguna</option>
+                  <option>Red Social</option>
+                  <option>Publicidad On-Line</option>
+                  <option>Ambos</option>
+                </select>
+              </div>
+            </div>
+            <textarea class="form-control" id="message" rows="5" placeholder="Mensaje" required ></textarea>
+            <div class="final">
+              <label>Campos * obligatorios</label>
+              <button type="button" class="btn btn-info" id="button" disabled >Enviar Mensaje</button>
+              <div class="alert alert-success" role="alert" id="alert" hidden>
+                Se ha enviado el mensaje con éxito!
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </footer>
