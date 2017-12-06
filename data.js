@@ -27,8 +27,8 @@ const pages = [
 module.exports = {
   site: {
     root,
-    url: "https://github.com/aboglioli/metalsmith-base",
-    title: "Metalsmith Base",
+    url: "https://webmendoza.com.ar",
+    title: "Diseño web en Mendoza",
     author: "IDEE",
     logo: 'logo.png'
   },
@@ -41,9 +41,5 @@ module.exports = {
   files: {
     brandIcons: onlyFilenames(globby.sync(['./sources/img/icons/brands/*']))
   },
-  pages,
-  contact: [
-    {icon: 'envelope', text: 'alan.boglioli@gmail.com'},
-    {icon: 'phone', text: `261 555999`}
-  ]
+  pages
 }

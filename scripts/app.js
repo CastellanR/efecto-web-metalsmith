@@ -2,24 +2,25 @@
   document.getElementById("contacto").addEventListener("keyup", validateForm);
   document.getElementById("button").addEventListener("click", submit);
 
-  function validateForm() {
-    var name = document.getElementById("name");
-    var phone = document.getElementById("phone");
-    var email = document.getElementById("email");
-    var plan = document.getElementById("plan");
-    var extras = document.getElementById("extras");
-    var message = document.getElementById("message");
-    var button = document.getElementById("button");
-    var disabled = true;
+  var nombre = document.getElementById("nombre");
+  var phone = document.getElementById("phone");
+  var email = document.getElementById("email");
+  var plan = document.getElementById("plan");
+  var extras = document.getElementById("extras");
+  var message = document.getElementById("message");
+  var button = document.getElementById("button");
+  var disabled = true;
 
-    if ( name.value.length < 3 ) {
-      name.classList.add('is-invalid');
-      name.classList.remove('is-valid');
+  function validateForm() {  
+
+    if ( nombre.value.length < 3 ) {
+      nombre.classList.add('is-invalid');
+      nombre.classList.remove('is-valid');
       disabled = true;
     }
     else {
-      name.classList.remove('is-invalid');
-      name.classList.add('is-valid');
+      nombre.classList.remove('is-invalid');
+      nombre.classList.add('is-valid');
       disabled = false;
     }
 
@@ -74,7 +75,12 @@
     }
   });
 
-  console.log(document.getElementById("contacto").value);
+  $('.select-plan').on('click', (e) => {
+    const selectedPlan = e.target ? e.target.dataset.plan : null;
+    if(selectedPlan) {
+      $(plan).val(selectedPlan);
+    }
+  })
 
 })();
 
@@ -91,8 +97,16 @@ function validateEmail(emailField){
 }
 
 function submit() {
+  var contacto = {
+    Name: nombre.value,
+    Email: email.value,
+    Phone: phone.value,
+    Plan: plan.value,
+    Extras: extras.value,
+    Message: message.value
+  }
   var xhr = new XMLHttpRequest();
-  var url = "https://ideenegocios.com.ar:3001/ceco";
+  var url = "https://ideenegocios.com.ar:3001/efecto-web";
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-type", "application/json");
   xhr.onreadystatechange = function () {
@@ -103,7 +117,8 @@ function submit() {
         document.getElementById("alert").hidden = false;
       }
   };
-  var data = JSON.stringify(document.getElementById("contacto").value);
+  var data = JSON.stringify(contacto);
+  console.log(contacto);
   xhr.send(data);
 
   return false;
