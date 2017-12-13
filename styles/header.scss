@@ -34,10 +34,17 @@ header {
           margin-top: 5rem;
           margin-bottom: 4rem;
         }
+        h3 {
+          text-align: center;
+          color: white;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 1.2rem;
+          font-weight: normal;
+        }
         @include mobile {
           width: 20rem;
           margin-top: -3rem;
-          p {
+          h3 {
             font-size: 0.7rem;
           }
           h1 {
