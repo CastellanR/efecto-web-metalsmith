@@ -28,7 +28,7 @@ services {
       text-align-last: center;
       margin: 1rem 1rem;
       color: $dark-gray;
-      h3 {
+      .item-title {
         font-size: 1.2rem;
         color: $black;
       }
@@ -69,7 +69,7 @@ services {
     .icon {
       border: thin gray solid;
     }
-    h3 {
+    .item-title {
       color: $dark-gray;
     }
   }
@@ -83,7 +83,7 @@ services {
         margin-left: -0.3rem;
       }
     }
-    h3 {
+    .item-title {
       color: $light-blue;
     }
   }
