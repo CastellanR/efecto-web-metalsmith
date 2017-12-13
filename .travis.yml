@@ -11,11 +11,9 @@ branches:
 before_install:
   - npm install -g surge
 
-install:
-  - npm install
-
 script:
-  - npm run gulp images && npm run build
+  - echo "Subiendo..."
 
 after_success:
+  - ls -l ./build
   - surge -p ./build --domain webmendoza.com.ar
