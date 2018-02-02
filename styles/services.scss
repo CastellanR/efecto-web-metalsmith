@@ -4,20 +4,12 @@
 #services {
   .container {
     display: flex;
-    margin-top: 3rem;
-    margin-bottom: 10rem;
     font-family: 'Open Sans', sans-serif;
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding: 0rem 12rem;
-    @include mobile {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      flex-direction: column;
-      padding: 0rem;
-    }
-    .item, .blue {
+    background-color: #f9f9f9;
+    .item {
       align-content: center;
       vertical-align: middle;
       display: flex;
@@ -26,22 +18,29 @@
       flex-direction: column;
       text-align: justify;
       text-align-last: center;
-      margin: 1rem 1rem;
+      padding: 3rem 2rem;
       color: $dark-gray;
+      flex: 1;
+      width: 50%;
+      @include mobile {
+        padding: 1rem 1rem;
+        width: 100%;
+        text-align: center;
+      }
+
       .item-title {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: $black;
+        width: 100%;
+        margin-top: 0.2rem;
+        @include mobile {
+          font-size: 0.8rem;
+        }
       }
       p {
-        font-size: 0.9rem;
-      }
-      @include mobile {
-        margin: 0.5rem 1rem;
-        p {
-          display: none;
-        }
-        hr {
-          display: none;
+        font-size: 1.2rem;
+        @include mobile {
+          font-size: 0.8rem;
         }
       }
       .icon {
@@ -71,20 +70,6 @@
     }
     .item-title {
       color: $dark-gray;
-    }
-  }
-  .blue {
-    .icon {
-      border: thin $light-blue solid;
-      transform: rotateZ(-45deg);
-      i {
-        transform: rotateZ(45deg);
-        color: $light-blue;
-        margin-left: -0.3rem;
-      }
-    }
-    .item-title {
-      color: $light-blue;
     }
   }
 }

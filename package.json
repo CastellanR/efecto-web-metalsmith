@@ -58,6 +58,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "jquery": "^3.2.1",
+    "jquery-slim": "^3.0.0",
     "normalize-scss": "^6.0.0"
   }
 }
