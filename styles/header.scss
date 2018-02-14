@@ -18,7 +18,7 @@ header {
       align-items: center;
       flex-direction: column;
       @include mobile {
-        height: 20rem;
+        height: 30rem;
         margin-top: 0rem;
       }
       .content {
@@ -34,19 +34,9 @@ header {
           margin-top: 2rem;
           margin-bottom: 2rem;
         }
-        h3 {
-          text-align: center;
-          color: white;
-          font-family: 'Source Sans Pro', sans-serif;
-          font-size: 1.2rem;
-          font-weight: normal;
-        }
         @include mobile {
           width: 20rem;
           margin-top: -3rem;
-          h3 {
-            font-size: 0.7rem;
-          }
           h1 {
             font-size: 1.5rem;
           }
