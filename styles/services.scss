@@ -5,12 +5,12 @@
   .container {
     display: flex;
     margin-top: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     font-family: 'Open Sans', sans-serif;
     align-content: center;
     justify-content: center;
     align-items: center;
-    padding: 0rem 12rem;
+    padding: 0 2rem;
     @include mobile {
       margin-top: 4rem;
       margin-bottom: 4rem;
@@ -24,8 +24,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      text-align: justify;
-      text-align-last: center;
+      text-align: center;
       margin: 1rem 1rem;
       color: $dark-gray;
       .item-title {
@@ -33,6 +32,7 @@
         color: $black;
       }
       p {
+        text-align: justify;
         font-size: 0.9rem;
       }
       @include mobile {
