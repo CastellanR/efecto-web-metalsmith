@@ -12,14 +12,10 @@
   "homepage": "https://github.com/aboglioli/metalsmith-base",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "./node_modules/.bin/gulp",
-    "start": "./node_modules/.bin/gulp server",
-    "debug": "DEBUG=metalsmith* ./node_modules/.bin/gulp",
-    "production": "./node_modules/.bin/gulp --production",
-    "build": "./node_modules/.bin/gulp --production --build",
-    "watch": "./node_modules/.bin/gulp watch",
-    "vendor": "./node_modules/.bin/gulp vendor",
-    "gulp": "./node_modules/.bin/gulp"
+    "start": "gulp server",
+    "debug": "DEBUG=metalsmith* gulp",
+    "build": "gulp --production --build",
+    "deploy": "surge -p build -d webmendoza.com.ar"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -53,6 +49,7 @@
     "minimist": "^1.2.0",
     "moment": "^2.18.1",
     "serve-static": "^1.12.1",
+    "surge": "^0.19.0",
     "webpack": "^2.4.1"
   },
   "dependencies": {
