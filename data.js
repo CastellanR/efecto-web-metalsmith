@@ -28,7 +28,7 @@ module.exports = {
   site: {
     root,
     url: "https://webmendoza.com.ar",
-    title: "Diseño web en Mendoza",
+    title: "Marketing digital Mendoza",
     author: "IDEE",
     logo: 'logo.png'
   },
